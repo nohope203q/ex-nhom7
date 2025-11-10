@@ -9,7 +9,6 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!-- Card chính chứa header và nội dung -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +18,6 @@
         android:padding="0dp"
         android:layout_margin="16dp">
 
-        <!-- Header màu xanh -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -38,7 +36,6 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <!-- Nội dung chính bên trong card -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +43,6 @@
             android:gravity="center"
             android:padding="20dp">
 
-            <!-- Tiêu đề -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,7 +51,6 @@
                 android:textStyle="bold"
                 android:textColor="#050505" />
 
-            <!-- Mô tả -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +59,6 @@
                 android:textColor="#65676B"
                 android:textSize="14sp" />
 
-            <!-- Email hiển thị -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,7 +68,6 @@
                 android:textSize="14sp"
                 android:layout_marginTop="4dp"/>
 
-            <!-- Khung nhập OTP 6 ô -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +138,6 @@
                     android:background="@drawable/otp_box"/>
             </LinearLayout>
 
-            <!-- Gửi lại mã -->
             <TextView
                 android:id="@+id/tvResend"
                 android:layout_width="wrap_content"
@@ -155,7 +147,6 @@
                 android:textColor="#1877F2"
                 android:textSize="14sp" />
 
-            <!-- Nút Cập nhật / Tiếp tục -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
