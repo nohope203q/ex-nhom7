@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F0F2F5"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Card chính chứa header và nội dung -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:background="#FFFFFF"
+        android:padding="0dp"
+        android:layout_margin="16dp">
+
+        <!-- Header màu xanh -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#1877F2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xác thực tài khoản"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Nội dung chính bên trong card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập mã từ email của bạn"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#050505" />
+
+            <!-- Mô tả -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Hãy cho chúng tôi biết rằng địa chỉ email này thuộc về bạn. Nhập mã từ email đã được gửi đến địa chỉ email của bạn."
+                android:textColor="#65676B"
+                android:textSize="14sp" />
+
+            <!-- Email hiển thị -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="example@gmail.com"
+                android:textStyle="bold"
+                android:textColor="#050505"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Khung nhập OTP 6 ô -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:spacing="8dp">
+
+                <EditText
+                    android:id="@+id/etOtp1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/otp_box"/>
+
+                <EditText
+                    android:id="@+id/etOtp2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/otp_box"/>
+
+                <EditText
+                    android:id="@+id/etOtp3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/otp_box"/>
+
+                <EditText
+                    android:id="@+id/etOtp4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/otp_box"/>
+
+                <EditText
+                    android:id="@+id/etOtp5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/otp_box"/>
+
+                <EditText
+                    android:id="@+id/etOtp6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/otp_box"/>
+            </LinearLayout>
+
+            <!-- Gửi lại mã -->
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gửi lại"
+                android:textColor="#1877F2"
+                android:textSize="14sp" />
+
+            <!-- Nút Cập nhật / Tiếp tục -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Trở lại"
+                    android:backgroundTint="#E4E6EB"
+                    android:textColor="#050505"
+                    android:paddingHorizontal="20dp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Tiếp tục"
+                    android:backgroundTint="#1877F2"
+                    android:textColor="#FFFFFF"
+                    android:paddingHorizontal="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
